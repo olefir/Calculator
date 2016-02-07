@@ -150,12 +150,10 @@ public class GUI extends JPanel {
 					lastNumber = newNumber = 0;
 					reset = true;
 				}
-				
-//				if(sourceEvent=="<"){
-//					newNumber = Double.valueOf(textField.getText());
-//					newChar=String.valueOf((int)newNumber/10);
-//					textFormat();
-//				}
+
+				if (sourceEvent == "<") {
+					textField.setText(textField.getText().substring(0, (textField.getText().length() - 1)));
+				}
 			}
 
 			/**
@@ -242,7 +240,7 @@ public class GUI extends JPanel {
 
 		final String[] buttonsNames = { "7", "8", "9", "/", "C", "4", "5", "6", "*", "<", "1", "2", "3", "-", "+", "0",
 				",", "=" };
-		final char[] buttonsActionCode = { '7', '8', '9', 111, 27, '4', '5', '6', 106, 8, '1', '2', '3', 109, 107, '0',
+		final char[] buttonsActionCode = { '7', '8', '9', 111, 27, '4', '5', '6', 106, 32, '1', '2', '3', 109, 107, '0',
 				110, 10 };
 
 		for (int num = 0; num < 18; ++num) {
