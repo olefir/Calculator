@@ -150,6 +150,12 @@ public class GUI extends JPanel {
 					lastNumber = newNumber = 0;
 					reset = true;
 				}
+				
+//				if(sourceEvent=="<"){
+//					newNumber = Double.valueOf(textField.getText());
+//					newChar=String.valueOf((int)newNumber/10);
+//					textFormat();
+//				}
 			}
 
 			/**
