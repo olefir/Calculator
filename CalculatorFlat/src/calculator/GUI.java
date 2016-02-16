@@ -25,9 +25,6 @@ public class GUI extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
-	private JFrame formCalculator;
-	private JTextField textField;
-
 	public GUI() {
 		initialize();
 	}
@@ -38,6 +35,9 @@ public class GUI extends JPanel {
 	 */
 
 	void initialize() {
+
+		JFrame formCalculator;
+		JTextField textField;
 
 		formCalculator = new JFrame();
 		formCalculator.getContentPane().setForeground(Color.BLACK);
